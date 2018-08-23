@@ -7,27 +7,27 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button comida;
-    Button bebida;
+    Button food;
+    Button drink;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        comida = (Button)findViewById(R.id.botonComida);
-        comida.setOnClickListener(new View.OnClickListener() {
+        food = (Button)findViewById(R.id.butttonFood);
+        food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent comida = new Intent(MainActivity.this, comidaActivity.class);
-                startActivity(comida);
+                Intent food = new Intent(MainActivity.this, FoodsActivity.class);
+                startActivity(food);
             }
         });
-        bebida = (Button)findViewById(R.id.botonBebida);
-        bebida.setOnClickListener(new View.OnClickListener() {
+        drink = (Button)findViewById(R.id.buttonDrink);
+        drink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent bebida = new Intent(MainActivity.this, bebidaActivity.class);
-                startActivity(bebida);
+                Intent drink = new Intent(MainActivity.this, DrinksActivity.class);
+                startActivity(drink);
             }
         });
     }

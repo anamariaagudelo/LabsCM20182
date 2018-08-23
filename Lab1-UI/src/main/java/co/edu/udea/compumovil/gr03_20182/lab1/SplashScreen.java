@@ -5,12 +5,9 @@ import android.os.Bundle;
 import java.util.*;
 import android.app.*;
 import android.content.*;
-import android.content.pm.ActivityInfo;
-import android.view.*;
 import android.widget.*;
-import android.os.*;
 
-public class splashscreen extends Activity {
+public class SplashScreen extends Activity {
     private Timer tiempo;
     private ProgressBar barraProgreso;
     private int i=0;
@@ -32,7 +29,7 @@ public class splashscreen extends Activity {
                 }else{
                     tiempo.cancel();
                     Intent intent = new Intent().setClass(
-                            splashscreen.this, MainActivity.class);
+                            SplashScreen.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }

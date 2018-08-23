@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.net.Uri;
 
-public class comidaActivity extends AppCompatActivity {
+public class FoodsActivity extends AppCompatActivity {
 
     ImageView imagenComida;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comida);
+        setContentView(R.layout.activity_foods);
         imagenComida = (ImageView) findViewById(R.id.imageComida);
     }
 
